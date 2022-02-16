@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.get('/api/articles/:article_id/comments', getCommentsByArticleId);
 
+
 app.use(handleCustomErrors);
 app.use(handle500s);
 
