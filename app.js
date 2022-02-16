@@ -17,8 +17,8 @@ app.use((err, req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  // handle 500s
   console.log(err);
+  // handle 500s
   res.status(500).send({ msg: 'Server error' });
 });
 
